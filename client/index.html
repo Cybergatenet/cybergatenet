@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Gate | Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onscroll="scrollPage();">
+    <header class="scroll">
+        <a href="./index.html" class="logo show_media">Cyber-Gate Communication Network</a>
+        <a href="#" class="logo hide_media"><img src="./img/cybergate_logo.png" alt="" width="100px" height="100px"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="img/cover.png" class="wave" alt="myCurve">
+        <div class="contentBx">
+            <h2>Coming Soon...</h2>
+            <p>Welcome!...Cyber-Gate Communication Network(CgCN) is an ICT institute where computer training, machine learning, e-learning, computer programming, web development, Graphics, 3D-Printing, sales and procurement of all sorts of electonic devices are made avaliable at an affordable price. Thanks for Joining us today, we are here to serve you better</p>
+            <div class="countdown">
+                <div class="time"><div id="day"></div><span>Days</span></div>
+                <div class="time"><div id="hour"></div><span>Hours</span></div>
+                <div class="time"><div id="minute"></div><span>Minutes</span></div>
+                <div class="time"><div id="second"></div><span>Seconds</span></div>
+            </div>
+            <a href="#" onclick="toggle();">Notify Me!</a>
+        </div>
+
+        <div class="imgBx">
+            <img src="img/cover2.png" alt="my cartoon image">
+        </div>
+        <!-- <br> -->
+        <ul class="sci">
+            <!-- add more icons ### and get their links to night -->
+            <li><a href="http://www.facebook.com/cybergatenet" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href="http://www.cyber-gatesnet.blgospot.com" target="_blank"><img src="img/download.png" alt="blog" width="50px" height="50px"></a></li>
+            <li><a href="#"><img src="img/whatsapp.png" alt="instagram" width="50px" height="50px"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCRlDc9SIz5Qbo90MeVmFaUA"><img src="img/youtube.png" alt="instagram" width="50px" height="50px"></a></li>
+            <!-- <li><a href="#"><img src="img/github.png" alt="instagram" width="50px" height="50px"></a></li> -->
+            <li><a href="http://www.instagram.com/cybergate.net6" target="_blank"><img src="img/instagram.png" alt="instagram"></a></li>
+        </ul> 
+    </section>
+    <div class="newsletter">
+        <h2>Stay Tuned</h2>
+        <p>Get notified at launch</p>
+        <div class="inputBox">
+            <form action="./server/email.php" method="POST">
+                <input type="email" name="" placeholder="Enter Email Address" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <img src="img/close.png" class="close" onclick="toggle();" alt="cybergate close">
+    </div>
+    <!-- footer -->
+        
+    <!-- footer -->
+    <!-- javascript countDown here -->
+   <script src="js/script.js"></script>
+</body>
+</html>

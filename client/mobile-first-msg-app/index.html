@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" type="text/css" href="./css/all.css">
+    <!-- animate css cdn -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="brand"><span>Cybergate</span> Web Design</h1>
+        <div class="wrapper animated bounceInLeft">
+            <div class="company-info">
+                <h3>Cybergate Web Design</h3>
+                <ul>
+                    <li><img src="./back1.png" alt="" width="20px" height="20px"> #5 Melrose Street</li>
+                    <li><i class="fab fa-phone"></i> +234-0703-775-7724</li>
+                    <li><i class="fab fa-envelop"></i> cybergatenet@yahoo.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+                <div class="alert">Your Message has been sent</div>
+                <form id="contactForm">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="name" id="phone">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="message"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="/__/firebase/7.14.5/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="/__/firebase/7.14.5/firebase-auth.js"></script>
+  <script src="/__/firebase/7.14.5/firebase-firestore.js"></script>
+  
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

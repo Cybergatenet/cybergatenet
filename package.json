@@ -1,0 +1,20 @@
+{
+  "name": "cybergate",
+  "version": "1.0.0",
+  "description": "cybergate web application initial version",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "live-server ./client/index.html",
+    "cybertest": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u0016https://github.com/Cybergatenet/cybergate"
+  },
+  "author": "cybergate",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
