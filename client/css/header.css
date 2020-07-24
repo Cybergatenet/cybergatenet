@@ -123,3 +123,93 @@ section{
     min-height: 100vh;
     transition: all 0.5s;
 }
+
+@media (max-width: 767px){
+    .typeWriter{
+        font-size: 18px;
+    }
+    .sidebar{
+        left: -250px;
+        width: 250px;
+        /* width: calc(100% - 300px); */
+    }
+    
+    .sidebar header{
+        font-size: 16px;
+    }
+    
+    .sidebar ul a{
+        font-size: 16px;
+        padding-left: 0px;
+    }
+    
+    ul li:hover a{
+        padding-left: 50px;
+    }
+    .sidebar ul a img{
+        margin-right: 16px;
+        max-width: 40px;
+        max-height: 40px;
+    }
+    #check{
+        display: none;
+    }
+    
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: #042331;
+        border-radius: 3px;
+        max-width: 40px;
+        max-height: 40px;
+    }
+    label #btn{
+        left: 40px;
+        top: 25px;
+        font-size: 35px;
+        color: white;
+        padding: 6px 12px;
+        z-index: 5;
+    }
+    
+    label #cancel{
+        z-index: 1111;
+        left: -100px;
+        top: 17px;
+        font-size: 30px;
+        color: #0a5275;
+        padding: 4px 9px;
+        transition: all 0.5s ease;
+    }
+    
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+        left: 195px;
+    }
+    #check:checked ~ section{
+        margin-left: 250px;
+    }
+    
+    section{
+        /* position: fixed; */
+        background: url("../img/1.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        transition: all 0.5s;
+    }
+    
+}

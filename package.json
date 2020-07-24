@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "live-server ./client/index.html",
-    "cybertest": "nodemon"
+    "cybertest": "nodemon index"
   },
   "repository": {
     "type": "git",

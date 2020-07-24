@@ -83,7 +83,7 @@ section .contentBx h2{
     color: var(--primary-white);
     text-transform: uppercase;
     color: var(--primary-blur-blue);
-    text-shadow: -1px 0px 5px aliceblue;
+    text-shadow: -1px 0px 2px aliceblue;
 }
 section .contentBx p{
     font-size: 18px;
@@ -146,7 +146,7 @@ section .imgBx img{
 }
 section .sci{
     position: absolute;
-    bottom: 40px;
+    bottom: 15px;
     left: 100px;
     z-index: 1000;
     display: flex;
@@ -258,7 +258,6 @@ section .sci li a{
     section .contentBx h2{
         font-size: 24px;
         color: var(--primary-blur-blue);
-        text-shadow: -1px 0px 5px aliceblue;
     }
     section .contentBx p{
         font-size: 16px;
