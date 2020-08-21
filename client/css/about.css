@@ -5,7 +5,9 @@
     --primary-blur-blue: blue;
     --primary-blue: #2e86de;
     --primary-black: #24252a;
-    --primary-white: #ffffff;
+    --primary-white: aliceblue;
+    --primary-h2-color: #063146;
+    --background: #042331;
 }
 
 *{
@@ -19,12 +21,14 @@ section{
 }
 section h2{
     font-size: 3em;
-    color: #4b656d;
+    color: var(--primary-h2-color);
+    margin-bottom: 10px;
 }
 section h2 span{
     display: block;
     font-size: 0.5em;
     color: #ff4983;
+    margin-top: 10px;
 }
 section p{
     margin-top: 20px;
@@ -85,6 +89,7 @@ section p{
     }
     section h2 span{
         font-size: 0.5em;
+        margin-top: 5px;
     }
     section p{
         margin-top: 10px;

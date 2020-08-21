@@ -1,8 +1,17 @@
+:root{
+    --primary-green: #10ac84;
+    --primary-blur-blue: blue;
+    --primary-blue: #2e86de;
+    --primary-black: #24252a;
+    --primary-white: aliceblue;
+    --primary-h2-color: #063146;
+    --background: #042331;
+}
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
+    /* list-style: none; */
 }
 
 body{
@@ -16,10 +25,10 @@ body{
     width: 100%;
     height: 70px;
     text-align: center;
-    color: aliceblue;
+    color: var(--primary-white);
     font-size: 22px;
     line-height: 70px;
-    background: #063146;
+    background: var(--primary-h2-color);
     user-select: none;
 }
 
@@ -28,7 +37,7 @@ body{
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #042331;
+    background: var(--background);
     transition: all .5s ease;
 }
 
@@ -37,7 +46,7 @@ body{
     color: white;
     text-align: center;
     line-height: 70px;
-    background: #063146;
+    background: var(--primary-h2-color);
     user-select: none;
 }
 
@@ -56,12 +65,16 @@ body{
 }
 
 ul li:hover a{
-    padding-left: 50px;
+    padding-left: 30px;
+    background-color: var(--primary-h2-color);
+    opacity: 0.7;
 }
-.sidebar ul a img{
+.sidebar ul a img, .sidebar ul a i{
     margin-right: 16px;
-    max-width: 40px;
+    max-width: 30px;
     max-height: 40px;
+    font-size: 24px;
+    color: var(--primary-blue);
 }
 #check{
     display: none;
@@ -69,20 +82,20 @@ ul li:hover a{
 
 label #btn, label #cancel{
     position: fixed;
-    /* position: absolute; */
     cursor: pointer;
-    background: #042331;
+    background: var(--background);
     border-radius: 3px;
     max-width: 40px;
     max-height: 40px;
 }
 label #btn{
-    left: 40px;
-    top: 25px;
+    left: calc(100% - 95%);
+    top: 20px;
     font-size: 35px;
     color: white;
-    padding: 6px 12px;
+    padding: 3px 6px;
     z-index: 5;
+    /* transition: all 0.5s ease; */
 }
 
 label #cancel{
@@ -93,6 +106,9 @@ label #cancel{
     color: #0a5275;
     padding: 4px 9px;
     transition: all 0.5s ease;
+}
+label #btn:active, label #cancel:active{
+    transform: scale(0.8);
 }
 
 #check:checked ~ .sidebar{
@@ -144,11 +160,11 @@ section.text{
     
     .sidebar ul a{
         font-size: 16px;
-        padding-left: 0px;
+        padding-left: 20px;
     }
     
     ul li:hover a{
-        padding-left: 50px;
+        padding-left: 30px;
     }
     .sidebar ul a img{
         margin-right: 16px;
@@ -168,11 +184,11 @@ section.text{
         max-height: 40px;
     }
     label #btn{
-        left: 40px;
-        top: 25px;
+        left: calc(100% - 95%);
+        top: 20px;
         font-size: 35px;
         color: white;
-        padding: 6px 12px;
+        padding: 3px 6px;
         z-index: 5;
     }
     
@@ -206,9 +222,7 @@ section.text{
         margin-left: 250px;
     }
     
-    section{
-        /* position: fixed; */
-        background: url("../img/1.jpg") no-repeat;
+    section.text{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
