@@ -115,7 +115,7 @@ label #cancel{
     margin-left: 250px;
 }
 
-section{
+section.text{
     /* position: fixed; */
     background: url("../img/1.jpg") no-repeat;
     background-position: center;
@@ -123,6 +123,9 @@ section{
     background-attachment: fixed;
     min-height: 100vh;
     transition: all 0.5s;
+    line-height: 1.5rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
 }
 
 @media (max-width: 767px){
@@ -157,7 +160,7 @@ section{
     }
     
     label #btn, label #cancel{
-        position: absolute;
+        position: fixed;
         cursor: pointer;
         background: #042331;
         border-radius: 3px;
