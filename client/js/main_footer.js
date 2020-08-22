@@ -2,12 +2,17 @@ const selectElement = function (element){
     return document.querySelector(element);
 };
 
-let menuToggler = selectElement('.menu-toggle');
-let body = selectElement('body');
+// let menuToggler = selectElement('.menu-toggle');
+// let body = selectElement('body');
 
-menuToggler.addEventListener('click', function() {
-    body.classList.toggle('open');
-});
+// menuToggler.addEventListener('click', function() {
+//     body.classList.toggle('open');
+// });
+let up = selectElement('.back-to-top');
+up.addEventListener('click', () => {
+    console.log("scrolled");
+    window.scrollTo = 0;
+})
 
 // Scroll reveal libray animation
 window.sr = ScrollReveal();

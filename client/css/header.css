@@ -39,6 +39,7 @@ body{
     height: 100%;
     background: var(--background);
     transition: all .5s ease;
+    z-index: 2;
 }
 
 .sidebar header{
