@@ -272,14 +272,16 @@ footer{
         font-size: 0.3em;
     }
     /* footer media query */
-   
+    footer{
+        padding: 3rem 0 1rem 0;
+    }
     .footer-content{
         max-width: 77.5rem;
         margin: auto;
     }
     .footer-content-about{
         max-width: 51.3rem;
-        margin: 0 auto 5.4rem;
+        margin: 0 auto 3rem;
     }
     .footer-content-about p{
         padding: 0 5rem;
@@ -289,13 +291,13 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        padding: 3rem;
+        padding: 0.7rem;
     }
     .social-media,
     .newsletter-form{
         width: 100%;
-        max-width: 27.3rem;
-        margin: 0 1rem;
+        max-width: 25rem;
+        margin: 0 2rem;
     }
     .social-icons i{
         opacity: 1;
