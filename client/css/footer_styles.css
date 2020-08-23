@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 /* Global styles */
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* 
 :root{
     --main-font: 'Source Sans Pro', sans-serif;
     --secondary-font: 'Herr Van Muellerhoff', cursive;
@@ -12,16 +8,8 @@
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
     --body-font-color: #515151;
-}
-html{
-    font-family: var(--body-font);
-    font-size: 10px;
-    color: var(--body-font-color);
-    scroll-behavior: smooth;
-}
-body{
-    overflow-x: hidden;
-}
+} */
+
 section{
     padding: 3.9rem 0;
     overflow: hidden;

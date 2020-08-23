@@ -1,20 +1,27 @@
 /* @import url('https://font.googleapis.com/family?='); */
 
 :root{
+    --body-font: Arial, Helvetica, sans-serif;
     --primary-green: #10ac84;
     --primary-blur-blue: blue;
     --primary-blue: #2e86de;
     --primary-black: #24252a;
+    --main-black: #121212;
     --primary-white: aliceblue;
     --primary-h2-color: #063146;
     --background: #042331;
 }
-
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+html{
+    font-family: var(--body-font);
+    font-size: 14px;
+    /* color: var(--body-font-color); */
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -85,8 +92,8 @@ section p{
 
 /* footer starts here */
 footer{
-    padding: 5rem 0;
-    background-color: #121212;
+    padding: 4rem 0;
+    background-color: var(--background);
     color: #fff;
     text-align: center;
     position: relative;
@@ -94,9 +101,9 @@ footer{
 .back-to-top{
     width: 4rem;
     height: 4rem;
-    background-color: #121212;
+    background-color: var(--background);
     position: absolute;
-    top: -3rem;
+    top: -1.7rem;
     left: 50%;
     transform: translate(-50%);
     border-radius: 50%;
@@ -119,30 +126,30 @@ footer{
     margin-bottom: 2rem;
 }
 .footer-content .asterisk{
-    margin: 2.4rem 0;
+    margin: 2rem 0;
 }
 .footer-content-about{
-    margin-bottom: 5.4rem;
+    margin-bottom: 2rem;
 }
 .footer-content-about p{
     line-height: 2;
+    padding: 0 20rem;
 }
 .social-icons{
     list-style: none;
-    margin-bottom: 5.4rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
 }
 .social-icons i{
     font-size: 2rem;
     color: #fff;
-    padding: .8rem 2rem;
+    padding: .8rem 2.3rem;
     opacity: 0.5;
     transition: color 0.5s;
 }
-.social-icons i:hover,
-.social-icons i:focus{
-    color: var(--secondary-font-color);
+.social-icons i:hover{
+    color: var(--primary-blue);
 }
 .newsletter-form{
     width: 100%;
@@ -151,22 +158,24 @@ footer{
     justify-content: center;
 }
 .newsletter-input{
-    width: 100%;
-    max-width: 25rem;
+    width: 80%;
+    max-width: 23rem;
     padding: 1rem;
+    padding-right: 4rem;
     border-radius: .4rem;
 }
 .newsletter-btn{
     background-color: transparent;
     border: none;
-    color: var(--main-font-color-dark);
+    color: var(--primary-black);
     cursor: pointer;
     font-size: 1.6rem;
-    padding: 1px .6rem;
+    padding: 1px .3rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 10.5rem;
+    right: 38%;
+    margin-left: 12rem;
 }
 
 
@@ -263,71 +272,7 @@ footer{
         font-size: 0.3em;
     }
     /* footer media query */
-    /* section{
-        padding: 7.9rem;
-    } */
-    /* .menu-toggle{
-        display: none;
-    } */
-    /* .nav{
-        justify-content: space-between;
-    } */
-    /* .nav-list{
-        position: initial;
-        width: initial;
-        height: initial;
-        background-color: transparent;
-        padding: 0;
-        justify-content: initial;
-        flex-direction: row;
-        transform: initial;
-        transition: initial;
-    }
-    .nav-item{
-        margin: 0 2.4rem;
-        border: none;
-    }
-    .nav-item:last-child{
-        margin-right: 0;
-    }
-    .nav-link{
-        font-size: 1.3rem;
-    } */
-    /* .active{
-        position: relative;
-    }
-    .active::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #fff;
-        left: 0;
-        bottom: -3px;
-    }
-    .sub-headline{
-        font-size: 10rem;
-    }
-    .first-letter{
-        font-size: 12.2rem;
-    }
-    .headline{
-        font-size: 4.7rem;
-        letter-spacing: .8rem;
-    }
-    .line{
-        max-width: 11.4rem;
-    }
-    .restaurant-info{
-        display: flex;
-        align-items: center;
-    }
-    .restaurant-info > div{
-        flex: 1;
-    }
-    .padding-right{
-        padding-right: 7rem;
-    } */
+   
     .footer-content{
         max-width: 77.5rem;
         margin: auto;
@@ -335,6 +280,9 @@ footer{
     .footer-content-about{
         max-width: 51.3rem;
         margin: 0 auto 5.4rem;
+    }
+    .footer-content-about p{
+        padding: 0 5rem;
     }
     .footer-content-divider{
         display: flex;
@@ -353,6 +301,11 @@ footer{
         opacity: 1;
     }
     .newsletter-btn{
-        margin-left: 7.5rem;
+        padding: 1px .3rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12%;
+        margin-left: 6rem;
     }
 }
