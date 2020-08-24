@@ -96,7 +96,8 @@ body::after{
 	font-size: 16px;
 	color: var(--primary-black);
 	padding: 7px 10px 10px 5px;
-	margin-left: 15px;
+	max-width: 80%;
+	margin-left: 10px;
 }
 .fields div i{
 	position: relative;
