@@ -162,6 +162,10 @@ section .sci li a{
     margin-right: 20px;
     transform: scale(0.8);
 }
+section .sci li a i{
+    font-size: 40px;
+    color: #000;
+}
 .newsletter{
     position: fixed;
     top: 50%;
