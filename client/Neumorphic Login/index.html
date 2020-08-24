@@ -7,25 +7,55 @@
 	<link rel="icon" href="../img/cyber_logo_main.png">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
 	<link rel="stylesheet" href="../css/fontawesome/css/all.css">
+	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="login-div">
-		<div class="logo"></div>
-		<div class="title">Cybergate Network</div>
-		<div class="sub-title">User Login</div>
-		<div class="fields">
-			<!-- add some svg icons infront of the input element
-			<svg fill="#999" viewBox="0 0 1024 1024"><path class="path1" d="M896 307.2h-819.2c-42.347 0-76.8 34.453\\\\ .4 252.267c15.925 10.618 36.363 15.925 56.8 15.925s40.877-5.307 56.802-15.9251378.398-252.267v438.566c0 14.115-11.485 25.6-25.6 25.6z"></path></svg> 
+	<!-- header starts here -->
+	<input type="checkbox" id="check">
+    <label for="check">
+        <img style="background-color: #fff;" src="../img/Menu_5-128.png" alt="" id="btn">
+        <img style="background-color: #fff;" src="../img/close.png" alt="" id="cancel">
+    </label>
+    <!-- header typewriter effect here -->
+    <h3 class="typeWriter" style="border-right: 1px solid #fff;" data-wait="1000" data-words='["Welcome To Cybergate Network", "Sign-up To Get Our Weekly Uploads", "We Beat The Best..."]'></h3>
+    <!-- End typewriter -->
+    <div class="sidebar">
+        <header>Navigation</header>
+    <!-- header typewriter effect here -->
 
-			change their color to gray #999-->
-			<div class="username"><i class="fas fa-user"></i><input type="text" class="user-input" placeholder="Username"></div>
-			<div class="password"><i class="fas fa-key"></i><input type="password" class="user-input" placeholder="Password"></div>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../about.html"><i class="fab fa-github"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> Tutorials</a></li>
+            <li><a href="../mobile-first-msg-app/index.html"><i class="fas fa-address-book"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+            <li><a href="#"><i class="far fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+	<!-- header ends here -->
+	<main>
+		<div class="login-div">
+			<div class="logo"></div>
+			<div class="title">Cybergate Network</div>
+			<div class="sub-title">User Login</div>
+			<div class="fields">
+				<!-- add some svg icons infront of the input element
+				<svg fill="#999" viewBox="0 0 1024 1024"><path class="path1" d="M896 307.2h-819.2c-42.347 0-76.8 34.453\\\\ .4 252.267c15.925 10.618 36.363 15.925 56.8 15.925s40.877-5.307 56.802-15.9251378.398-252.267v438.566c0 14.115-11.485 25.6-25.6 25.6z"></path></svg> 
+	
+				change their color to gray #999-->
+				<div class="username"><i class="fas fa-user"></i><input type="text" class="user-input" placeholder="Username"></div>
+				<div class="password"><i class="fas fa-key"></i><input type="password" class="user-input" placeholder="Password"></div>
+			</div>
+			<button type="submit" class="signin-button">Login</button>
+			<div class="link">
+				<a href="#">forgot password</a> or <a href="#">Sign up</a>
+			</div>
 		</div>
-		<button type="submit" class="signin-button">Login</button>
-		<div class="link">
-			<a href="#">forgot password</a> or <a href="#">Sign up</a>
-		</div>
-	</div>
+	</main>
+
+	 <!-- typewriter effect -->
+	 <script src="../js/typewriter.js"></script>
 </body>
 </html>

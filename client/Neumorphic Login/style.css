@@ -1,4 +1,17 @@
-*{
+:root{
+    --body-font: Arial, Helvetica, sans-serif;
+    --primary-green: #10ac84;
+    --primary-blur-blue: blue;
+    --primary-blue: #2e86de;
+    --primary-black: #24252a;
+    --main-black: #121212;
+    --primary-white: aliceblue;
+    --primary-h2-color: #063146;
+	--background: #042331;
+	--box-shadow: 13px 13px 20px #cbced1,
+					-13px -13px 20px #ffffff;
+}
+*, *::before, *::after{
 	box-sizing: border-box;
 }
 body{
@@ -11,7 +24,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #555;
+	color: var(--primary-black);
 	/* background: #ecf0f3; */
 	background-image: url("../img/1.jpg");
 	background-repeat: no-repeat;
@@ -27,20 +40,20 @@ body::after{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: aliceblue;
+	background-color: var(--primary-white);
 	opacity: 0.8;
 	z-index: -1;
 }
 .login-div{
 	width: 330px;
-	height: 700px;
+	/* height: 500px; */
 	/*width: calc(100% - 220px);*/
-	height: calc(100vh - 50px);
+	height: calc(100vh - 150px);
 	padding: 40px 35px 35px 35px;
 	border-radius: 40px;
+	margin-top: 30px;
 	background: #ecf0f3;
-	box-shadow: 13px 13px 20px #cbced1,
-				-13px -13px 20px #ffffff;
+	box-shadow: var(--box-shadow);
 }
 .logo{
 	background: url("./cybergate.jpg") center no-repeat;
@@ -81,7 +94,7 @@ body::after{
 	outline: none;
 	background: none;
 	font-size: 16px;
-	color: #555;
+	color: var(--primary-black);
 	padding: 7px 10px 10px 5px;
 	margin-left: 15px;
 }
@@ -111,15 +124,15 @@ body::after{
 	font-size: 16px;
 	font-weight: 700;
 	font-family: 'Lato', sans-serif;
-	color: #fff;
+	color: var(--primary-white);
 	text-align: center;
-	background: royalblue;
+	background: var(--primary-blue);
 	box-shadow: 3px 3px 8px #b1b1b1,
 				-3px -3px 8px #ffffff;
 	transition: 0.5s;
 }
 .signin-button:hover{
-	background: blue;
+	background: var(--primary-h2-color);
 	transform: scaleX(1.01);
 }
 .signin-button:active{
