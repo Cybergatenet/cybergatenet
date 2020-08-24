@@ -74,6 +74,7 @@ body::after{
 .fields{
 	width: 100%;
 	padding: 10px 5px 5px 5px;
+	position: sticky;
 }
 .fields input{
 	border: none;
@@ -82,6 +83,13 @@ body::after{
 	font-size: 16px;
 	color: #555;
 	padding: 7px 10px 10px 5px;
+	margin-left: 15px;
+}
+.fields div i{
+	position: relative;
+	left: 10px;
+	top: 2px;
+	margin-left: 5px;
 }
 .username, .password{
 	margin-bottom: 15px;
