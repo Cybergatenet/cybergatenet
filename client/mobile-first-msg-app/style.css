@@ -45,6 +45,7 @@ ul{
 }
 
 .wrapper{
+    border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
 }
 .wrapper > *{
@@ -87,6 +88,7 @@ ul{
     width: 100%;
     padding: 1em;
     border: 1px solid #c9e6ff;
+    border-radius: 10px;
 }
 
 .contact form button{
@@ -98,11 +100,11 @@ ul{
 }
 
 .contact form button:hover, .contact form button:focus{
-    background: var(--primary-h2-color);
-    color: var(--primary-white);
-    font-weight: 900;
+    background: var(--primary-white);
+    color: var(--primary-h2-color);
+    font-weight: 700;
     outline: 0;
-    transition: background 2s ease-out;
+    transition: background 0.7s ease-in-out;
 }
 .alert{
     text-align: center;
@@ -118,6 +120,7 @@ ul{
     .wrapper{
         display: grid;
         grid-template-columns: 1fr 2fr;
+        border-radius: 5px;
     }
     .wrapper > *{
         padding: 2em;
