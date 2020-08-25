@@ -6,20 +6,46 @@
     <title>Mobile App</title>
     <link rel="icon" href="../img/cyber_logo_main.png">
     <!-- font awesome cdn -->
-    <link rel="stylesheet" type="text/css" href="./css/all.css">
-    <!-- animate css cdn -->
+    <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.css">
+    <!-- animate css cdn not added yet-->
+	<link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- header starts here -->
+	<input type="checkbox" id="check">
+    <label for="check">
+        <img style="background-color: #fff;" src="../img/Menu_5-128.png" alt="" id="btn">
+        <img style="background-color: #fff;" src="../img/close.png" alt="" id="cancel">
+    </label>
+    <!-- header typewriter effect here -->
+    <h3 class="typeWriter" style="border-right: 1px solid #fff;" data-wait="1000" data-words='["Welcome To Cybergate Network", "Sign-up To Get Our Weekly Uploads", "We Beat The Best..."]'></h3>
+    <!-- End typewriter -->
+    <div class="sidebar">
+        <header>Navigation</header>
+    <!-- header typewriter effect here -->
+
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../about.html"><i class="fab fa-github"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> Tutorials</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+            <li><a href="../Neumorphic Login/index.html"><i class="far fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+	<!-- header ends here -->
+
     <div class="container">
-        <h1 class="brand"><span>Cybergate</span> Web Design</h1>
+        <!-- <h1 class="brand"><span>Cybergate</span> Web Design</h1> -->
         <div class="wrapper animated bounceInLeft">
             <div class="company-info">
-                <h3>Cybergate Web Design</h3>
+                <h3 class="brand"><span>Cybergate</span> Contact Form</h3>
                 <ul>
-                    <li><img src="./back1.png" alt="" width="20px" height="20px"> #5 Melrose Street</li>
-                    <li><i class="fab fa-phone"></i> +234-0703-775-7724</li>
-                    <li><i class="fab fa-envelop"></i> cybergatenet@yahoo.com</li>
+                    <li><i class="fas fa-address-book"></i> #5 Melrose Street</li>
+                    <li><i class="fas fa-phone"></i> +234-0703-775-7724</li>
+                    <li><i class="fas fa-envelope"></i> cybergatenet@yahoo.com</li>
                 </ul>
             </div>
             <div class="contact">
@@ -28,23 +54,23 @@
                 <form id="contactForm">
                     <p>
                         <label>Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" placeholder="Enter your full name">
                     </p>
                     <p>
                         <label>Company</label>
-                        <input type="text" name="company" id="company">
+                        <input type="text" name="company" id="company" placeholder="Enter your company Name if Any">
                     </p>
                     <p>
                         <label>Email Address</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="Enter your Email Address">
                     </p>
                     <p>
                         <label>Phone Number</label>
-                        <input type="text" name="name" id="phone">
+                        <input type="text" name="name" id="phone" placeholder="Enter your phone number">
                     </p>
                     <p class="full">
                         <label>Message</label>
-                        <textarea name="message" rows="5" id="message"></textarea>
+                        <textarea name="message" rows="5" id="message" placeholder="Add a comment..."></textarea>
                     </p>
                     <p class="full">
                         <button type="submit">Submit</button>
@@ -67,6 +93,8 @@
   <script src="/__/firebase/7.14.5/firebase-firestore.js"></script>
   
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <!-- header js -->
+    <script src="../js/typewriter.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

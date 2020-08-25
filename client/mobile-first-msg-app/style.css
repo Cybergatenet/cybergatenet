@@ -1,10 +1,23 @@
-*{
+:root{
+    --body-font: Arial, Helvetica, sans-serif;
+    --primary-green: #10ac84;
+    --primary-blur-blue: blue;
+    --primary-blue: #2e86de;
+    --primary-black: #24252a;
+    --main-black: #121212;
+    --primary-white: aliceblue;
+    --primary-h2-color: #063146;
+    --background: #042331;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    background-color: #92bde7;
-    color: #485e74;
+    background-color: var(--primary-white);
+    color: var(--primary-blue);
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
@@ -15,6 +28,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+    margin-top: 50px;
 }
 
 ul{
@@ -27,7 +41,7 @@ ul{
 }
 
 .brand span{
-    color: #fff;
+    color: var(--primary-white);
 }
 
 .wrapper{
@@ -37,7 +51,7 @@ ul{
     padding: 1em;
 }
 .company-info{
-    background: #c9e6ff;
+    background: var(--primary-h2-color);
 }
 
 .company-info h3, .company-info ul{
@@ -46,7 +60,8 @@ ul{
 }
 
 .contact{
-    background: #f9feff;
+    background: var(--primary-blue);
+    color: var(--background);
 }
 
 /* form style */
@@ -75,14 +90,17 @@ ul{
 }
 
 .contact form button{
-    background: #c9e6ff;
+    background: var(--background);
     border: 0;
+    font-weight: 700;
+    color: var(--primary-white);
     text-transform: uppercase;
 }
 
 .contact form button:hover, .contact form button:focus{
-    background: #92bde7;
-    color: #fff;
+    background: var(--primary-h2-color);
+    color: var(--primary-white);
+    font-weight: 900;
     outline: 0;
     transition: background 2s ease-out;
 }
