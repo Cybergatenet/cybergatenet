@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Cyber-Admin DashBoard | Users</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/starter-template.css" rel="stylesheet">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Add ck-editor cdn -->
+    <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+      <a class="navbar-brand" href="#">Cyber-Admin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">DashBoard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages.html">Pages<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="posts.html">Posts</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="users.html">Users</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Welcome, Cybergate<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Logout</a>
+          </li>
+          </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Users <small> Manage Users</small></h1>
+          </div>
+          <div class="col-md-2">
+            <div class="dropdown create">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create Content</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a class="dropdown-item" type="button" data-toggle="model" data-target="#addPage">Add Page</a></li>
+                <li><a class="dropdown-item" href="posts.html">Add Post</a></li>
+                <li><a class="dropdown-item" href="users.html">Add User</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="index.html">DashBoard</a></li>
+          <li class="active">User</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="list-group">
+              <a href="index.html" class="list-group-item active main-color-bg"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>DashBoard</a>
+              <a href="pages.html" class="list-group-item"><span class="glyphicon glyphicon-list" aria-hidden="true"></span>Pages <span class="badge">12</span></a>
+              <a href="posts.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Posts <span class="badge">135</span></a>
+              <a href="users.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Users <span class="badge">1037</span></a>
+            </div>
+            <div class="well">
+              <h4>Disk space Used</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+              </div>
+              <h4>BandWidth Used</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">40%</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="panel panel-default">
+              <div class="panel-heading main-color-bg">
+                <h3 class="panel-title">Users</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Filter Users...">
+                    </div>
+                </div>
+                <br>
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Joined</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Cybergate Mercygate</td>
+                        <td>cybergatenet@yahoo.com</td>
+                        <td>Dec 12, 2019</td>
+                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Abelistist Chinedu</td>
+                        <td>abelististuwas@gmail.com</td>
+                        <td>Feb 23, 2020</td>
+                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Vania Ijeoma</td>
+                        <td>ijvania@gmail.com</td>
+                        <td>feb 31, 2017</td>
+                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Ejike Jackson</td>
+                        <td>ejikej@gmail.com</td>
+                        <td>Dec 12, 2020</td>
+                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a> </td>
+                    </tr>
+
+
+                </table>
+              </div>
+            </div>
+        
+
+
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+      <p>Copyright Cyber-Admin, &copy; 2020</p>
+    </footer>
+
+    <!-- Add page Model -->
+    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true"></span></button>
+            <h4 class="modal-title" id="myModalLabel">Add Page</h4>
+          </div>
+          <div class="modal-body">
+                <div class="form-group">
+                  <label>Page Title</label>
+                  <input type="text" class="form-control" placeholder="Page Title">
+              </div>
+              <div class="form-group">
+                <label>Page Title</label>
+                <textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Published
+              </label>
+            </div>
+            <div class="form-group">
+              <label>Meta Tags</label>
+              <input type="text" class="form-control" placeholder="Add Some Tags...">
+            </div>
+            <div class="form-group">
+              <label>Meta Description</label>
+              <input type="text" class="form-control" placeholder="Add Meta Description...">
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <!-- ck Editor -->
+    <script>
+      CKEDITOR.replace( 'editor1' );
+    </script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery-slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/vendor/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
