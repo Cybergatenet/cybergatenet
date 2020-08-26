@@ -18,7 +18,7 @@ app.get('/login', (req, res) => {
 });
 
 // Admin side route
-app.get('/login', (req, res) => {
+app.get('/CyberAdmin', (req, res) => {
     // app.use(express.static(path.join(__dirname, 'client')));
     app.use(express.static(path.join(__dirname, 'AdminDashBoard')));
     // res.send('Hello World from Cybergate');
