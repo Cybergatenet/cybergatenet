@@ -299,17 +299,17 @@ img{
 	.toggle{
 		width: 40px;
 		height: 40px;
-		/*background: url();*/
-		/*background-position: center;
+		background: url(./img/cyberMenu.png);
+		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 30px;*/
+		background-size: 30px;
 		cursor: pointer;
 	}
 	.toggle.active{
-		/*background: url();*/
-		/*background-position: center;
+		background: url(./img/close.png);
+		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 25px;*/
+		background-size: 25px;
 		cursor: pointer;
 	}
 	header.sticky .toggle{

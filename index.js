@@ -13,16 +13,20 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
     app.use(express.static(path.join(__dirname, 'client')));
     app.use(express.static(path.join(__dirname, 'client/Neumorphic Login')));
-    // res.send('Hello World from Cybergate');
     res.sendFile(path.join(__dirname, 'client/Neumorphic Login', 'index.html'));    
 });
 
 // Admin side route
 app.get('/CyberAdmin', (req, res) => {
-    // app.use(express.static(path.join(__dirname, 'client')));
     app.use(express.static(path.join(__dirname, 'AdminDashBoard')));
-    // res.send('Hello World from Cybergate');
     res.sendFile(path.join(__dirname, 'AdminDashBoard', 'index.html'));    
+});
+
+// Portfolio page
+app.get('/portfolio', (req, res) => {
+    app.use(express.static(path.join(__dirname, 'client')));
+    app.use(express.static(path.join(__dirname, 'client/portfolio')));
+    res.sendFile(path.join(__dirname, 'client/portfolio', 'index.html'));    
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
