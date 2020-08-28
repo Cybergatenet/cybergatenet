@@ -138,7 +138,7 @@ footer{
 /* Portfolio*/
 .portfolio a{
     color: #eee;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 .portfolio a:hover{
     color: var(--primary-h2-color);
