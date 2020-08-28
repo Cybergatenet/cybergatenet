@@ -135,6 +135,17 @@ footer{
     line-height: 2;
     padding: 0 20rem;
 }
+/* Portfolio*/
+.portfolio a{
+    color: #eee;
+    transition: all 0.5s;
+}
+.portfolio a:hover{
+    color: var(--primary-h2-color);
+    background-color: var(--primary-white);
+    padding: 5px;
+    border-radius: 7px;
+}
 .social-icons{
     list-style: none;
     margin-bottom: 3rem;

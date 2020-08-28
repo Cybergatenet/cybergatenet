@@ -26,7 +26,7 @@ app.get('/CyberAdmin', (req, res) => {
 app.get('/portfolio', (req, res) => {
     app.use(express.static(path.join(__dirname, 'client')));
     app.use(express.static(path.join(__dirname, 'client/portfolio')));
-    res.sendFile(path.join(__dirname, 'client/portfolio', 'index.html'));    
+    res.sendFile(path.join(__dirname, 'client/portfolio', 'index.html'));
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
