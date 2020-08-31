@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cover Video</title>
+    <link rel="icon" href="../img/cyber_logo_main.png">
 	<!-- font awesome link -->
 	<link rel="stylesheet" href="../css/fontawesome/css/all.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/about.css">
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 <body>
 
+	<div class="preloader">
+        <div class="counter">0</div>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img style="background-color: #fff;" src="../img/Menu_5-128.png" alt="" id="btn">
+        <img style="background-color: #fff;" src="../img/close.png" alt="" id="cancel">
+    </label>
+    <!-- header typewriter effect here -->
+    <h3 class="typeWriter" style="border-right: 1px solid #fff;" data-wait="1000" data-words='["Welcome To Cybergate Network", "Sign-up To Get Our Weekly Uploads", "We Beat The Best..."]'></h3>
+    <!-- End typewriter -->
+    <div class="sidebar">
+        <header>Navigation</header>
+    <!-- header typewriter effect here -->
+
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fab fa-github"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> Tutorials</a></li>
+            <li><a href="../mobile-first-msg-app/index.html"><i class="fas fa-address-book"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+            <li><a href="../Neumorphic Login/index.html"><i class="far fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+    <!-- header ends here -->
 	<!-- header goes here -->
 	<section class="showcase">
 		<div class="video-container">
@@ -21,10 +52,11 @@
 	</section>
 
 	<section id="about">
-		<h1>About</h1>
+		<h1>About Us</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco</p>
+		<input type="button" class="btn" value="Read More &raquo;">
 		<h2>Follow Us On Social Media</h2>
 		<div class="social">
 			<a href="https://twitter.com/cybergatenet6" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
@@ -33,5 +65,67 @@
 			<a href="https://www.linkedin.com/in/cybergate" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
 		</div>
 	</section>
+
+	<!-- footer starts here -->
+
+	<footer>
+		<div class="container">
+			<div class="back-to-top">
+				<a href="#hero"><i class="fas fa-chevron-up"></i></a>
+			</div>
+			<div class="footer-content">
+				<div class="footer-content-about animate-top">
+					<h4>Our Mission & Vission</h4>
+					<div class="asterisk"><i class="fas fa-asterisk"></i></div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia sit, in ad reprehenderit a necessitatibus. Culpa ad ab voluptatibus exercitationem deleniti nihil. Laudantium?</p>
+				</div>
+				<h4 class="portfolio"><a href="../portfolio/index.html">View Our Portfolio</a></h4>
+
+				<div class="footer-content-divider animate-bottom">
+					<div class="social-media">
+						<h4>follow along</h4>
+						<ul class="social-icons">
+							<li>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-facebook-square"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-github"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="newsletter-container">
+						<h4>Newsletter</h4>
+						<form action="" class="newsletter-form">
+							<input type="text" class="newsletter-input" placeholder="Your email address...">
+							<button type="submit" class="newsletter-btn">
+								<i class="fas fa-envelope"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- footer ends here -->
+
+	<script src="../js/main_footer.js"></script>
+
+
+    <!-- jQuery script here -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- custom javascript here -->
+    <script src="../js/about.js"></script>
+    <!-- typewriter effect -->
+	<script src="../js/typewriter.js"></script>
 </body>
 </html>

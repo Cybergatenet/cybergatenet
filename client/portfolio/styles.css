@@ -76,7 +76,8 @@ header .logo{
 	letter-spacing: 2px;
 }
 header.sticky .logo{
-	color: #111;
+	/* color: #111; */
+	color: #fff;
 }
 header ul{
 	position: relative;
@@ -304,6 +305,9 @@ img{
 		background-repeat: no-repeat;
 		background-size: 30px;
 		cursor: pointer;
+		/* color: #fff; */
+		/* filter: invert(1); */
+		/* z-index: 1000; */
 	}
 	.toggle.active{
 		background: url(./img/close.png);
@@ -311,6 +315,9 @@ img{
 		background-repeat: no-repeat;
 		background-size: 25px;
 		cursor: pointer;
+		/* color: #fff; */
+		/* filter: invert(1); */
+		/* z-index: 1000; */
 	}
 	header.sticky .toggle{
 		filter: invert(1);

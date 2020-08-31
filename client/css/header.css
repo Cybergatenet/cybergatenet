@@ -30,6 +30,7 @@ body{
     line-height: 70px;
     background: var(--primary-h2-color);
     user-select: none;
+    z-index: 2;
 }
 
 .sidebar{
@@ -88,6 +89,7 @@ label #btn, label #cancel{
     border-radius: 3px;
     max-width: 40px;
     max-height: 40px;
+    z-index: 1000;
 }
 label #btn{
     left: calc(100% - 95%);
@@ -95,7 +97,7 @@ label #btn{
     font-size: 35px;
     color: white;
     padding: 3px 6px;
-    z-index: 5;
+    /* z-index: 5; */
     /* transition: all 0.5s ease; */
 }
 

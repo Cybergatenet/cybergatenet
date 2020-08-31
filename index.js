@@ -28,6 +28,13 @@ app.get('/CyberAdmin', (req, res) => {
     res.sendFile(path.join(__dirname, 'AdminDashBoard', 'index.html'));    
 });
 
+// Home page route
+app.get('/home', (req, res) => {
+    app.use(express.static(path.join(__dirname, 'client')));
+    app.use(express.static(path.join(__dirname, 'client/home')));
+    res.sendFile(path.join(__dirname, 'client/home', 'index.html'));    
+});
+
 // Portfolio page
 app.get('/portfolio', (req, res) => {
     app.use(express.static(path.join(__dirname, 'client')));
