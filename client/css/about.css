@@ -152,10 +152,15 @@ footer{
     display: flex;
     justify-content: center;
 }
+.social-icons li{
+    /* pointer-events: none; */
+    padding: 0;
+    margin: 0;
+}
 .social-icons i{
     font-size: 2rem;
     color: #fff;
-    padding: .8rem 2.3rem;
+    padding: .8rem 1.5rem;
     opacity: 0.5;
     transition: color 0.5s;
 }
