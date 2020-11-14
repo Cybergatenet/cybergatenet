@@ -33,6 +33,7 @@ h1{
 	text-align: center;
 	padding: 0 20px;
 	color: #fff;
+	transition: all 0.5s;
 }
 .video-container{
 	position: absolute;
