@@ -13,11 +13,9 @@
     text-decoration: none;
     /* list-style: none; */
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .typeWriter{
     position: fixed;
     top: 0;
@@ -32,7 +30,6 @@ body{
     user-select: none;
     z-index: 2;
 }
-
 .sidebar{
     position: fixed;
     left: -250px;
@@ -42,7 +39,6 @@ body{
     transition: all .5s ease;
     z-index: 2;
 }
-
 .sidebar header{
     font-size: 22px;
     color: white;
@@ -51,7 +47,6 @@ body{
     background: var(--primary-h2-color);
     user-select: none;
 }
-
 .sidebar ul a{
     display: block;
     height: 100%;
@@ -65,9 +60,8 @@ body{
     border-bottom: 1px solid black;
     transition: .4s;
 }
-
-ul li:hover a{
-    padding-left: 30px;
+.sidebar ul li:hover a{
+    padding-left: 50px;
     background-color: var(--primary-h2-color);
     opacity: 0.7;
 }
@@ -81,7 +75,6 @@ ul li:hover a{
 #check{
     display: none;
 }
-
 label #btn, label #cancel{
     position: fixed;
     cursor: pointer;
@@ -100,7 +93,6 @@ label #btn{
     /* z-index: 5; */
     /* transition: all 0.5s ease; */
 }
-
 label #cancel{
     z-index: 1111;
     left: -195px;
@@ -113,7 +105,6 @@ label #cancel{
 label #btn:active, label #cancel:active{
     transform: scale(0.8);
 }
-
 #check:checked ~ .sidebar{
     left: 0;
 }
@@ -133,7 +124,6 @@ label #btn:active, label #cancel:active{
 #check:checked ~ section{
     margin-left: 250px;
 }
-
 section.text{
     /* position: fixed; */
     background: url("../img/1.jpg") no-repeat;
@@ -146,7 +136,6 @@ section.text{
     letter-spacing: 1.2px;
     font-weight: 500;
 }
-
 @media (max-width: 767px){
     .typeWriter{
         font-size: 18px;
@@ -156,17 +145,14 @@ section.text{
         width: 250px;
         /* width: calc(100% - 300px); */
     }
-    
     .sidebar header{
         font-size: 16px;
     }
-    
     .sidebar ul a{
         font-size: 16px;
         padding-left: 20px;
     }
-    
-    ul li:hover a{
+    .sidebar ul li:hover a{
         padding-left: 30px;
     }
     .sidebar ul a img{
@@ -177,7 +163,6 @@ section.text{
     #check{
         display: none;
     }
-    
     label #btn, label #cancel{
         position: fixed;
         cursor: pointer;
@@ -194,7 +179,6 @@ section.text{
         padding: 3px 6px;
         z-index: 5;
     }
-    
     label #cancel{
         z-index: 1111;
         left: -100px;
@@ -204,7 +188,6 @@ section.text{
         padding: 4px 9px;
         transition: all 0.5s ease;
     }
-    
     #check:checked ~ .sidebar{
         left: 0;
     }
@@ -224,7 +207,6 @@ section.text{
     #check:checked ~ section{
         margin-left: 250px;
     }
-    
     section.text{
         background-position: center;
         background-size: cover;
@@ -232,5 +214,4 @@ section.text{
         min-height: 100vh;
         transition: all 0.5s;
     }
-    
 }

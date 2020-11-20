@@ -12,14 +12,14 @@ app.get('/', (req, res) => {
 // Login route
 app.get('/login', (req, res) => {
     app.use(express.static(path.join(__dirname, 'client')));
-    app.use(express.static(path.join(__dirname, 'client/Neumorphic Login')));
-    res.sendFile(path.join(__dirname, 'client/Neumorphic Login', 'index.html'));    
+    app.use(express.static(path.join(__dirname, 'client/login')));
+    res.sendFile(path.join(__dirname, 'client/login', 'index.html'));    
 });
 // Sign up route
 app.get('/signup', (req, res) => {
     app.use(express.static(path.join(__dirname, 'client')));
     app.use(express.static(path.join(__dirname, 'client/sign_up')));
-    res.sendFile(path.join(__dirname, 'client/sign_up', 'attractive-signup-UI-design.html'));    
+    res.sendFile(path.join(__dirname, 'client/sign_up', 'signup.html'));    
 });
 
 // Admin side route

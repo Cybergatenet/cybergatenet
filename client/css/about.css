@@ -189,9 +189,9 @@ footer{
     padding: 1px .3rem;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    right: 38%;
-    margin-left: 12rem;
+    transform: translate(500%, -50%);
+    right: 50%;
+    margin-left: 0;
 }
 
 
