@@ -36,10 +36,10 @@ app.get('/home', (req, res) => {
 });
 
 // Portfolio page
-app.get('/portfolio', (req, res) => {
+app.get('/service', (req, res) => {
     app.use(express.static(path.join(__dirname, 'client')));
-    app.use(express.static(path.join(__dirname, 'client/portfolio')));
-    res.sendFile(path.join(__dirname, 'client/portfolio', 'index.html'));
+    app.use(express.static(path.join(__dirname, 'client/service')));
+    res.sendFile(path.join(__dirname, 'client/service', 'service.html'));
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

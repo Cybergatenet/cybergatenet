@@ -4,7 +4,11 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cybergate Network | Home Page</title>
-    <link rel="icon" href="../img/cyber_logo_main.png">
+	<link rel="icon" href="../img/cyber_logo_main.png">
+	 <!-- Scroll Reveal CDN -->
+	 <script src="https://unpkg.com/scrollreveal"></script>
+	 <script src="../js/jquery-3-5-1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<!-- font awesome link -->
 	<link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
@@ -44,7 +48,7 @@
 		</div>
 		<div class="carosel">
 			<h1>Welcome to Cybergate</h1>
-			<h3>Cybergate Landing Users Page</h3>
+			<h3>Users' Landing Page</h3>
 			<a href="#about" class="btn">Learn More</a>
 		</div>
 	</section>
@@ -142,6 +146,32 @@
 			<a href="#" class="btn">View More</a>
 		</div>
 	</section>
+	<!-- slider starts here -->
+	<section class="services" id="services">
+        <div class="container">
+            <div class="heading white animate-top">
+                <h2>Our Tutorials</h2>
+                <p>Stay connected for amazing contents</p>
+            </div>
+            <div class="content">
+                <div class="slider owl-carousel">
+					<div class="card" style="color: aliceblue;">
+						<div class="img">
+							<img src="./img/replaceimg.jpg" alt="post image">
+						</div>
+						<div class="content">
+							<div class="title">ReactNative Crash Course</div>
+							<small class="sub-title h6">Posted By Cybergate</small>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis excepturi ad, dignissimos rem ratione esse?</p>
+							<div class="btn" style="position: relative; bottom: 10%;">
+								<a href="#" class="btn btn-danger">Read More</a>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<section class="testimonies" id="testimonies">
 		<div class="heading">
@@ -268,14 +298,39 @@
 		</div>
 	</footer>
 	<!-- footer ends here -->
-
+	<!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	<script src="../js/main_footer.js"></script>
-
     <!-- jQuery script here -->
-    <script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery CDN here -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- owl-carousel -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!-- custom javascript here -->
     <script src="../js/about.js"></script>
     <!-- typewriter effect -->
 	<script src="../js/typewriter.js"></script>
+    <!-- OwlCarousel -->
+    <script>
+		// $(document).ready(function(){
+		// 	$(".owl-carousel").owlCarousel();
+		// });
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true
+		});
+		// $('.owl-carousel').owlCarousel({
+		// 	items:4,
+		// 	loop:true,
+		// 	center:true,
+		// 	margin:10,
+		// 	URLhashListener:true,
+		// 	autoplayHoverPause:true,
+		// 	startPosition: 'URLHash'
+		// });
+    </script>
 </body>
 </html>

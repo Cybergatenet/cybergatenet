@@ -3,6 +3,13 @@
 :root{
 	--primary-color: #3a4052;
 	--primary-one-color: #2196f3;
+	--primary-green: #10ac84;
+    --primary-blur-blue: blue;
+    --primary-blue: #2e86de;
+    --primary-black: #24252a;
+    --primary-white: aliceblue;
+    --primary-h2-color: #063146;
+    --background: #042331;
 }
 *{
 	box-sizing: border-box;
@@ -310,7 +317,8 @@ img{
 		max-width: calc(100% - 20px);
 		padding: 40px 20px;
 		margin: 10px;
-		background-color: #2196f3;
+		/* background-color: #2196f3; */
+		background-color: var(--primary-h2-color);
 	}
 	.testimonies .content .testimoniesBx h3{
 		margin-top: 20px;
