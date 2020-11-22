@@ -175,6 +175,8 @@ img{
 }
 .work .content .workBx img{
 	max-width: 100%;
+	display: block;
+	margin: 5px auto;
 }
 .testimonies{
 	background-color: #f7f7f7;
@@ -188,7 +190,8 @@ img{
 	max-width: calc(50% - 40px);
 	padding: 60px 40px;
 	margin: 20px;
-	background-color: #2196f3;
+	/* background-color: #2196f3; */
+	background-color: var(--primary-h2-color);
 }
 .testimonies .content .testimoniesBx p{
 	color: #fff;
@@ -274,6 +277,7 @@ img{
 	color: #fff;
 	flex-direction: column;
 	font-weight: 300;
+	text-align: center
 }
 .contactInfoBx .box .text h3{
 	font-weight: 500;
