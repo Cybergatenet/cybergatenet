@@ -316,7 +316,8 @@ footer{
     .newsletter-form{
         width: 100%;
         max-width: 25rem;
-        margin: 0 2rem;
+        /* margin: 0 2rem; */
+        margin: 0 auto;
     }
     .social-icons i{
         opacity: 1;

@@ -124,6 +124,7 @@ section h2 {
 .content {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .contentBx{
 	padding-right: 30px;
