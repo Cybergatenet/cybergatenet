@@ -9,7 +9,7 @@ function toggle(){
 }
 
 // init count down
-    var countDate = new Date('March 18, 2021 00:00:00').getTime();
+    var countDate = new Date('July 21, 2021 00:00:00').getTime();
 
     function newYear(){
         var now = new Date().getTime();
