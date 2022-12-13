@@ -4,7 +4,7 @@
   "description": "cybergate web application initial version",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node init && node index.js",
     "cybertest": "nodemon index.js"
   },
   "repository": {
@@ -14,6 +14,6 @@
   "author": "cybergate",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
