@@ -4,7 +4,7 @@
   "description": "cybergate web application initial version",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node init && node index.js",
     "cybertest": "nodemon index.js"
   },
   "repository": {
