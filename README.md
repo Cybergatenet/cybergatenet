@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-# I'm a Full stack web developer
+# I'm a Full Time Software Engineer
 <!--
 **Cybergatenet/cybergatenet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
