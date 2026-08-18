@@ -9,7 +9,12 @@ function toggle(){
 }
 
 // init count down
-    var countDate = new Date('Mar 18, 2026 00:00:00').getTime();
+    // var countDate = new Date('Mar 18, 2026 00:00:00').getTime();
+    var tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(0, 0, 0, 0);
+
+    var countDate = tomorrow.getTime();
 
     function newYear(){
         var now = new Date().getTime();
